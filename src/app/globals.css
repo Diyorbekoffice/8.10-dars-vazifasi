@@ -14,16 +14,43 @@
   }
 }
 
+@font-face {
+  font-family: 'Chronicle Display Black';
+  src: url('/fonts/Chronicle-Display-Black.woff2') format('woff2'),
+       url('/fonts/Chronicle-Display-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+       url('/fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Chronicle Display Black';
 }
-.bigDiv {
+
+.font-Gilroy {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+}
+.maindiv {
   background-color: #0B1D26;
-  background-image:url('./images/bg-2.png'), url('./images/VG.png'), url('./images/bg.png'), url('./images/MG.png') ;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 0 1140px, 0 770px, 0 0, 0 464px; /* Har bir rasmning joylashuvi */
+  background-image:
+    url('./images/bg-2.png'), 
+    url('./images/VG.png'), 
+    url('./images/bg.png'), 
+    url('./images/MG.png') ;
+  background-repeat: 
+    no-repeat, 
+    no-repeat, 
+    no-repeat, 
+    no-repeat;
+  background-position: 0 1140px, 0 770px, 0 0, 0 464px; 
 }
 
 
