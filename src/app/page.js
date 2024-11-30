@@ -1,101 +1,182 @@
+import React from "react";
 import Image from "next/image";
 
-export default function Home() {
+function page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bigDiv max-w-[1920px] mx-auto px-20 pb-[120px] mb-20 pt-16">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className=" flex justify-between">
+        
+        <Image
+          src="/Logo (2).svgz"
+          alt="Description of image"
+          width={108}
+          height={24}
+        />
+
+        <div className="flex gap-10 ">
+          <span className="text-lg font-bold">Equipment</span>
+          <span className="text-lg font-bold">About us</span>
+          <span className="text-lg font-bold">Blog</span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div>
+          <span>Account</span>
+        </div>
+      </div>
+
+      <div className="max-w-[1000px] mx-auto mt-[198px] mb-[800px]">
+        <div className="flex flex-row gap-8 items-center">
+          <div className="w-[72px] h-[2px] bg-[#FBD784] "></div>
+          <span className="text-lg font-extrabold text-[#FBD784] tracking-[6px]">
+            A Hiking guide
+          </span>
+        </div>
+        <h1 className=" text-[88px] font-thin ">
+          Be prepared for the Mountains and beyond!
+        </h1>
+        <div>
+          <span className="text-2xl">scroll down</span>
+        </div>
+      </div>
+
+      <div className=" mx-[149px] flex flex-col gap-[200px]">
+        <div className="page_1 flex items-center">
+          <div className="max-w-[632px] mx-auto">
+            <div className="flex flex-row gap-8 items-center">
+              <div className="w-[72px] h-[2px] bg-[#FBD784] "></div>
+              <span className="text-lg font-extrabold text-[#FBD784] tracking-[6px]">
+                GEt Started
+              </span>
+            </div>
+
+            <h1 className="text-[64px] font-semibold mt-6 mb-[27px]">
+              What level of hiker are you?
+            </h1>
+
+            <p className="text-lg font-bold mb-[27px]">
+              Determining what level of hiker you are can be an important tool
+              when planning future hikes. This hiking level guide will help you
+              plan hikes according to different hike ratings set by various
+              websites like All Trails and Modern Hiker. What type of hiker are
+              you – novice, moderate, advanced moderate, expert, or expert
+              backpacker?{" "}
+            </p>
+
+            <div>
+              <span className="text-lg text-[#FBD784]">read more</span>
+            </div>
+          </div>
+
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/01.png"
+            alt="Description of image"
+            width={566}
+            height={720}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+
+        <div className="page_2 flex items-center">
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/01 (1).png"
+            alt="Description of image"
+            width={566}
+            height={720}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <div className="max-w-[632px] mx-auto">
+            <div className="flex flex-row gap-8 items-center">
+              <div className="w-[72px] h-[2px] bg-[#FBD784] "></div>
+              <span className="text-lg font-extrabold text-[#FBD784] tracking-[6px]">
+                Hiking Essentials
+              </span>
+            </div>
+
+            <h1 className="text-[64px] font-semibold mt-6 mb-[27px]">
+              Picking the right Hiking Gear!
+            </h1>
+
+            <p className="text-lg font-bold mb-[27px]">
+              The nice thing about beginning hiking is that you don’t really
+              need any special gear, you can probably get away with things you
+              already have. Let’s start with clothing. A typical mistake hiking
+              beginners make is wearing jeans and regular clothes, which will
+              get heavy and chafe wif they get sweaty or wet.
+            </p>
+
+            <div>
+              <span className="text-lg text-[#FBD784]">read more</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="page_3 flex items-center">
+          <div className="max-w-[632px] mx-auto">
+            <div className="flex flex-row gap-8 items-center">
+              <div className="w-[72px] h-[2px] bg-[#FBD784] "></div>
+              <span className="text-lg font-extrabold text-[#FBD784] tracking-[6px]">
+                where you go is the key
+              </span>
+            </div>
+
+            <h1 className="text-[64px] font-semibold mt-6 mb-[27px]">
+              Understand Your Map & Timing
+            </h1>
+
+            <p className="text-lg font-bold mb-[27px]">
+              To start, print out the hiking guide and map. If it’s raining,
+              throw them in a Zip-Lock bag. Read over the guide, study the map,
+              and have a good idea of what to expect. I like to know what my
+              next landmark is as I hike. For example, I’ll read the guide and
+              know that say, in a mile, I make a right turn at the junction..
+            </p>
+
+            <div>
+              <span className="text-lg text-[#FBD784]">read more</span>
+            </div>
+          </div>
+
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="/01 (2).png"
+            alt="Description of image"
+            width={566}
+            height={720}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+
+
+
+        <footer className="flex justify-between">
+          <div className="flex flex-col max-w-[355px] gap-6">
+            <Image
+              src="/Logo (2).svg"
+              alt="Description of image"
+              width={108}
+              height={24}
+            />
+            <p className="text-lg font-bold mb-[98px]">
+              Get out there & discover your next slope, mountain & destination!
+            </p>
+            <span className="text-lg font-medium opacity-50">Copyright 2023 MNTN, Inc. Terms & Privacy</span>
+          </div>
+
+          <div className="flex flex-col gap-[16px]">
+            <h2 className="text-2xl font-bold text-[#FBD784] mb-2">More on The Blog</h2>
+            <span>About MNTN</span>
+            <span>Contributors & Writers</span>
+            <span>Write For Us</span>
+            <span>Contact Us</span>
+            <span>Privacy Policy</span>
+          </div>
+
+          <div className="flex flex-col gap-[16px]">
+            <h2 className="text-2xl font-bold text-[#FBD784] mb-2">More on MNTN</h2>
+            <span>The Team</span>
+            <span>Jobs</span>
+            <span>Press</span>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
+
+export default page;
