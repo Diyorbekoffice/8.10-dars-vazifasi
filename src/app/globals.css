@@ -38,6 +38,37 @@ body {
 .font-Gilroy {
   font-family: 'Gilroy ExtraBold', sans-serif;
 }
+
+.timeline-container {
+  position: relative;
+  max-width: 200px;
+  margin-top: 50px;
+}
+
+.timeline {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.timeline-step {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.timeline-line {
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+
 .maindiv {
   background-color: #0B1D26;
   background-image:
